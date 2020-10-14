@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="favicon.ico" type="icon">
+  <meta charset="utf-8">
+  <title>Vicara</title>
+
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+  <style>
+
+    body{
+      font-family: 'Montserrat-black', sans-serif; 
+      
+    }
+
+    .navbar-brand{
+      font-family: "Ubuntu";
+      font-weight: bold;
+      font-size: 1.7rem;
+    }
+ 
+    #title{
+      background-color: #183d5d;
+      color: white;
+    }
+
+    h1{
+      font-family: 'Montserrat-black', sans-serif;
+      font-size: 3.4rem;
+      line-height: 1.5;
+      color: white;
+    }
+
+    h2{
+      font-size: 3rem;
+      line-height: 1.5;
+      font-family: "Montserrat-bold",sans-serif;
+    }
+
+    .container-fluid{
+      padding: 2% 9%;
+      padding-bottom: 5%;
+    }
+
+    .navbar{
+      padding-bottom: 3.2rem;
+    }
+    
+    .nav-item{
+      padding: 0 12px;
+    }
+
+    .nav-link{
+      font-size: 1.2rem;
+      font-family: "Montserrat-light", sans-serif;
+    }
+
+    .bb{
+      margin: 5% 3% 5% 0;
+    }
+
+    .title-img{
+      width: 90%;
+      transform: rotate(25deg);
+      margin-left: 10%;
+      position: absolute;
+    }
+
+     #feature{
+       background-color: white;
+       padding: 7% 15%;
+       z-index: 1;
+       position: relative;
+
+     }
+
+     .features{
+       text-align: center;
+       padding: 5%;
+     }
+
+     h3{
+       font-family: "Montserrat-bold",sans-serif;
+     }
+
+     p{
+       color:grey;
+     }
+
+     .a{
+       color:#183d5d;
+     }
+     .a:hover{
+       color:  #f842cb;
+     }
+
+     #testimonials{
+       
+       text-align: center;
+       background-color: #183d5d;
+       color: white;
+     }
+
+     .hell{
+       
+       width: 10%;
+       margin: 20px;
+     }
+
+     #press{
+       background-color:white;
+       text-align: center;
+       padding-bottom: 4%;
+     }
+
+     .no{
+       width: 10%;
+       margin: 20px 26px 40px;
+      
+     }
+
+     .carousel-item{
+      padding: 7% 15%;
+     }
+
+     #pricing{
+       padding: 7% 15% ;
+       text-align: center;
+     }
+
+     .price{
+       padding: 3% 2%;
+    }
+
+    #cta{
+      background-color:#183d5d;
+      text-align: center;
+      padding: 7% 17%;
+    }
+
+    .cool{
+      margin: 3% 1.5%;
+    }
+
+    .qq{
+      color: white;
+      font-family: "Montserrat-bold",sans-serif;
+      font-size: 3rem;
+    }
+
+    #footer{
+      padding: 7% 15%;
+      text-align: center;
+    }
+    
+    .mm{
+      margin: 20px 10px;
+    }
+
+    @media (max-width: 1200px){
+      #title{
+        text-align: center;
+        
+      }
+      .title-img{
+        position: static;
+        transform: rotate(0);
+
+      }
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <section id="title">
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href=" ">Vicara</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link " href="#title">Home</a>
+            </li>
+  
+            <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+  
+            <li class="nav-item">
+                <a class="nav-link " href="#cta">Downloads</a>
+            </li>
+  
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="https://vicara-health-kit.web.app/">Sign Up</a>
+            </li>
+  
+        </ul>
+    </nav>
+  
+  
+    <div class="row">
+      <div class="col-lg-6">
+        <h1 >The Best kit for detecting health issues from simple signs.</h1>
+        <button type="button" class="btn btn-dark btn-lg bb"><i class="fa fa-apple" aria-hidden="true"></i>  Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg bb"><i class="fa fa-play-circle-o" aria-hidden="true"></i>  Download</button>
+      </div>
+      <div class="col-lg-6">
+        <img class="title-img" src="images/mobile.png" alt="iphone-mockup">
+      </div>
+    </div>
+
+  </div>
+    
+    
+
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="feature">
+
+    <div class="row">
+
+      <div class="features col-lg-4">
+        <i class="fa fa-check-circle fa-4x a" aria-hidden="true"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your children could do it.</p>
+      </div>
+  
+      <div class="features col-lg-4">
+        <i class="fa fa-bullseye fa-4x a" aria-hidden="true"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the doctors from various prestigious hospitals across the country.</p>
+      </div>
+  
+      <div class="features col-lg-4 ">
+        <i class="fa fa-heart fa-4x a" aria-hidden="true"></i>
+        <h3>Guaranteed to work.</h3>
+        <p> Its hard to find things that we won't take care of.</p> 
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+    <div id="carousels" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h2>I don't need to rush to hospitals now as I have a doctor in my hand.</h2>
+          <img class="hell" src="images/doctor.png" alt="dog-profile">
+          <em>Pebbles, India</em>
+        </div>
+        <div class="carousel-item">
+          <h2>My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="hell" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Beverly, Illinois</em>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carousels" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carousels" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>  
+      </a>
+
+    </div>
+
+   
+
+   
+
+  </section>
+
+
+  <!-- Press -->
+
+  <section id="press">
+    <img class="no" src="images/apollo.jpg" alt="tc-logo">
+    <img class="no" src="images/fortis.jpg" alt="tnw-logo">
+    <img class="no" src="images/cmc.png" alt="biz-insider-logo">
+    <img class="no" src="images/tmh.png" alt="mashable-logo">
+
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing">
+
+    <h2>A Plan that every customer should seek.</h2>
+    <p>Simple and affordable price plans for you and your health.</p>
+
+    
+
+    <div class="row">
+
+    <div class="price col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Basic</h3>
+        </div>
+        <div class="card-body">
+          <h2>Free</h2>
+          <p>Self Assessment</p>
+          <p>Precautions Per Assessment</p>
+          <p>Unlimited App Usage</p>
+          <br/>
+          <br/>
+          <button type="button" class="btn btn-block btn-outline-dark btn-lg">Sign Up</button>
+  
+        </div>
+      </div>
+
+    </div>
+
+    <div class="price col-lg-4 col-md-6">
+      <div class="card">
+        <div class="card-header">
+          <h3>Pro</h3>
+        </div>
+        <div class="card-body">
+          
+          <h2>$49 / mo</h2>
+          <p>Self Assessment</p>
+          <p>Certified Doctor Support</p>
+          <p>Unlimited App Usage</p>
+          <br/>
+          <br/>
+          <button type="button" class="btn btn-outline-dark btn-block btn-lg">Sign Up</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="price col-lg-4">
+      <div class="card">
+        <div class="card-header">
+          <h3>Premium</h3>
+        </div>
+        <div class="card-body">
+          <h2>$99 / mo</h2>
+          <p>Self Assessment</p>
+          <p>Certified Doctor Support</p>
+          <p>One Month Weekly Tracking</p>
+          <p>Unlimited App Usage</p>
+          <button type="button" class="btn btn-block btn-outline-dark btn-lg">Sign Up</button>
+        </div>
+      </div>
+
+    </div>
+    
+
+    
+
+    
+  </div>
+    
+    
+
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="qq">Solves population health and members satisfaction challenges efficiently and effictively.</h3>
+    <button class="btn btn-dark btn-lg cool" type="button"><i class="fa fa-apple" aria-hidden="true"></i>  Download</button>
+    <button class="btn btn-light btn-lg cool" type="button"><i class="fa fa-play-circle-o" aria-hidden="true"></i>  Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <a href="https://www.facebook.com/vicarahq/" target="_blank"><span><i class="fa fa-facebook mm fa-2x" aria-hidden="true"></i></span></a>  
+    <a href="https://instagram.com/vicara_hq?igshid=3mvp3lcz59d6" target="_blank"><span><i class="fa fa-instagram mm fa-2x" aria-hidden="true"></i></span></a>  
+    <a href="" target="_blank"><span><i class="fa fa-envelope mm fa-2x" aria-hidden="true"></i></span></a>  
+    <a href="https://www.linkedin.com/company/vicara-hq" target="_blank"><span><i class="fa fa-linkedin mm fa-2x" aria-hidden="true"></i></span></a>  
+    
+
+    <p>© Copyright 2020 Vicara</p>
+
+  </footer>
+  
+
+</body>
+
+</html>
