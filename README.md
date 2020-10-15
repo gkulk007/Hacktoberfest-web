@@ -15,7 +15,7 @@
 2. Open the terminal and clone your fork using
 
 ```
-git clone http://github.com/{your_username}/hacktoberfest2020-web-designs
+git clone http://github.com/{your_username}/Hacktoberfest-web
 ```
 
 3. Before making changes, in the project directory checkout to a new branch with name of your choice
@@ -45,7 +45,7 @@ git commit -m '{Your commit message}'
 git push origin {branch_name}
 ```
 
-9. Go to http://github.com/{your_username}/hacktoberfest2020-web-designs , on the left there is a button to change your branch. Click on it and select {branch_name}.
+9. Go to http://github.com/{your_username}/Hacktoberfest-web , on the left there is a button to change your branch. Click on it and select {branch_name}.
 10. Now you will be able see a button named "Pull request". Click on it.
 11. Add appropriate message and click the "Create Pull Request" button.
 
