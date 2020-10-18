@@ -1,0 +1,287 @@
+@media screen and (max-width: 576px) {
+
+    header,
+    main {
+        padding: 40px;
+
+    }
+
+    header {
+
+        width: 100%;
+        justify-content: center;
+        grid-template-areas: "logo""navigation""registration""jumbotron";
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 5em;
+    }
+
+    .hamburger-btn {
+        position: absolute;
+        right: 40px;
+        display: inline-block;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    .menu-list li {
+        margin: 0 0 20px 0;
+    }
+
+    .registration {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-size: 0.6em;
+    }
+
+    .register {
+        width: 80px;
+        height: 30px;
+        padding: 0;
+        line-height: 30px;
+    }
+
+    .menu-list,
+    .registration {
+        display: none;
+    }
+
+    .login {
+        margin: 0;
+    }
+
+    .hero {
+        margin-bottom: 10px;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .jumbotron {
+        margin-top: 30px;
+        justify-content: center;
+        grid-template-areas: "hero""text";
+    }
+
+    .jb-text {
+        text-align: center;
+    }
+
+    .jb-text h2 {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .jb-text p {
+        font-size: 0.5em;
+    }
+
+    .donation,
+    .all-response,
+    .all-doctors {
+        margin-top: -15px;
+        font-size: 0.5em;
+    }
+
+    .arrow {
+        width: 0.5em;
+    }
+
+    .excellences {
+        margin-bottom: 40px;
+    }
+
+    .excellences h3 {
+        font-size: 0.8em;
+    }
+
+    .excellence-list {
+        flex-direction: column;
+    }
+
+    .excellence-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .excellence-item h4 {
+        top: -25px;
+        margin-left: 5px;
+        font-size: 0.8em;
+    }
+
+    .excellence-item p {
+        font-size: 0.6em;
+        text-align: center;
+    }
+
+    .response {
+        grid-template-areas: "text""response-list";
+        text-align: center;
+        margin-bottom: 150px;
+    }
+
+    .response-list {
+        grid-template-areas: "first""second""third";
+    }
+
+    .response-item {
+        margin-top: 20px;
+        height: 12em;
+        width: 100%;
+    }
+
+    .response-item .stars {
+        top: 30px;
+        left: 0;
+    }
+
+    .response-item .name {
+        margin-bottom: 15px;
+        position: static;
+        display: block;
+    }
+
+    .response-item .message {
+        font-size: 0.6em;
+    }
+
+    .text h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .text p {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .illustration {
+        width: 12em;
+        margin-bottom: 20px;
+    }
+
+    .doctors {
+        grid-template-areas: "text""doctors";
+        text-align: center;
+    }
+
+    .doctors-list {
+        flex-direction: column;
+    }
+
+    .doctor {
+        width: 80%;
+        margin: 25px auto 0;
+    }
+
+    .all-doctors {
+        text-align: center;
+    }
+
+    .events-list {
+        flex-direction: column;
+    }
+
+    .event button {
+        padding: 5px;
+        top: 28%;
+    }
+
+    .event {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        text-align: center;
+        padding: 110px 5px 0;
+    }
+
+    .event p {
+        font-size: 0.4em;
+    }
+
+    .member {
+        flex-direction: column;
+    }
+
+    .member>div {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .premium {
+        transform: scale(1);
+    }
+
+    .input {
+        top: -200px;
+        height: 500px;
+        flex-direction: column;
+        font-size: 0.8em;
+    }
+
+    main {
+        margin-bottom: 350px;
+    }
+
+    .input {
+        width: 100%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+
+    .box {
+        border-left: none;
+        border-top: 1px solid white;
+        padding: 15px 0 0;
+        overflow: hidden;
+    }
+
+    .box::after {
+
+        right: 9px;
+        bottom: 0;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .main-footer {
+        height: 600px;
+        overflow: hidden;
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+
+    .dentist-zone {
+        text-align: center;
+    }
+
+
+    .dentist-zone img {
+        width: 12em;
+    }
+
+    .response::after {
+        display: none;
+    }
+
+    footer::before {
+        display: none;
+    }
+
+}
