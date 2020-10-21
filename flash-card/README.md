@@ -1,5 +1,5 @@
 # Flash Cards
-Flash card app for learning. Display, add and remove memory cards with questions and answers
+Flash card app for Display, add and remove memory cards with questions and answers
 
 ## Screenshot
 ![](https://github.com/anandmohan23/Hacktoberfest-web/blob/master/flash-card/Screenshot.jpg?raw=true)
