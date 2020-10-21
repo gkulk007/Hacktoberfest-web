@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script
+			defer
+			src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+			integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+			crossorigin="anonymous"
+	></script>
+    <title>Personal Expense</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Xpense</span>
+        <span class="navbar-brand mb-0 h1" id="headingTotal"></span>
+    </nav>
+    <div class="container-fluid bg-light" style="min-height: 100vh">
+        <div class="jumbotron mt-4">
+            <div class="input-group mb-3">
+                <input
+                    type="text"
+                    class="form-control"
+                    id="inputAmount"
+                    placeholder="Amount spent"
+                    aria-label="Amount spent"
+                    aria-describedby="spent in rupee"
+                />
+                <div class="input-group-append">
+                    <span class="input-group-text" id="spent in rupee">₹</span>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="spent at">@</span>
+                </div>
+                <input
+                    type="text"
+                    class="form-control"
+                    id="inputDesc"
+                    placeholder="spent On"
+                    aria-label="spent On"
+                    aria-describedby="spent at"
+                />
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button" id="btnAddExpense">Add</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <ul class="list-group" id="expenseTable">
+
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <script>
+        //get the heading element
+        const headingEl = document.querySelector("#headingTotal");
+
+        //get the ref of input description
+        const inputDescEl = document.querySelector("#inputDesc");
+
+        //ref to input amount
+        let inputElement = document.querySelector("#inputAmount");
+
+        //get ref to table
+        const expenseTableEl = document.querySelector("#expenseTable");
+
+        //init value of expense is 0
+        let totalExpense = 0;
+
+        //set the heading element to total expense
+        headingEl.textContent = totalExpense;
+
+        //all expenses at one place
+        let allExpenses = [];
+
+        //onButtonClick add inputAmount to totalExpense
+        function addExpenseToTotal(){
+            //create object
+            const expenseItem = {};
+
+            //read value from inputDescEl
+            const textDesc = inputDescEl.value;
+
+            //read value from inputAmount
+            const textAmount = inputElement.value;
+
+            //convert it into number
+            const expense = parseInt(textAmount,10);
+
+            //add it to the object
+            expenseItem.desc = textDesc;
+            expenseItem.amount = expense;
+            expenseItem.moment = new Date();
+            allExpenses.push(expenseItem);
+
+            //add it to totalExpense
+            totalExpense = totalExpense + expense;
+            
+            //set the heading element to total expense
+            updateTotal();
+
+            //looping array and updating div of table
+            renderList(allExpenses);
+            inputElement.value = "";
+            inputDescEl.value = "";
+        }
+        
+        //Get ref of button
+        const element = document.querySelector("#btnAddExpense");
+        //Event Listener
+        element.addEventListener("click", addExpenseToTotal, false);
+
+        //Controller Functions
+
+        //Get Date String
+        function getDateString(moment){
+            return moment.toLocaleDateString('en-US',{year:'numeric', month:'long', day: 'numeric'})
+        }
+
+        //Update Total if element is deleted
+        function updateTotal(){
+            const someText = `Total: ${totalExpense}`;
+            headingEl.textContent = someText;
+        }
+
+        //delete Item
+        function deleteItem(dateValue,amount){
+            const newArr = allExpenses.filter(expense => expense.moment.valueOf()!== dateValue);
+            totalExpense -= amount;
+            updateTotal();
+            allExpenses = newArr;
+            renderList(allExpenses);
+        }
+
+        //View Layer
+        function renderList(arrOfList){
+            const allExpenseHTML = arrOfList.map(item => createListItem(item));
+            const joinedHTML = allExpenseHTML.join('');
+            expenseTableEl.innerHTML = joinedHTML;
+        }
+
+        function createListItem({desc, amount, moment}){
+            return `
+                <li class="list-group-item d-flex justify-content-between">
+                    <div class="d-flex flex-column">
+                        ${desc}
+                        <small class="text-muted">${getDateString(moment)}</small>
+                    </div>
+                    <div>
+                        <span class="px-5">
+                            ${amount} 
+                        </span>
+                        <button
+                         type="button"
+                          class="btn btn-outline-danger btn-sm"
+                          onclick="deleteItem(${moment.valueOf()},${amount})">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </div>
+                </li>
+                `;
+        }
+
+        
+
+    </script>
+</body>
+</html>
