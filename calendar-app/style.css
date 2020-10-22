@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 500px;
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 1rem;
+}
+
+#calendar {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: burlywood;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+}
+
+.day {
+  margin: 0.25rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: blanchedalmond;
+  border-radius: 0.25rem;
+}
+
+.selected {
+  background-color: rgb(255, 248, 237);
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: burlywood;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+input[type="text"] {
+  padding: 0.2rem;
+}
+
+.btn:hover {
+  background-color: blanchedalmond;
+}
+
+ul {
+  list-style: none;
+}
