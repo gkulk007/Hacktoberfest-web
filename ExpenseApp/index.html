@@ -11,7 +11,11 @@
 			crossorigin="anonymous"
 	></script>
     <title>Personal Expense</title>
-      <style>
+
+
+
+    <style>
+
         .container {
             width: 1200px;
             background-color: f8f9fa;
@@ -19,47 +23,50 @@
     </style>
 </head>
 <body>
-  <div class="container">
-    <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Xpense</span>
-        <span class="navbar-brand mb-0 h1" id="headingTotal"></span>
-    </nav>
-    <div class="container-fluid bg-light" style="min-height: 100vh">
-        <div class="jumbotron mt-4">
-            <div class="input-group mb-3">
-                <input
-                    type="text"
-                    class="form-control"
-                    id="inputAmount"
-                    placeholder="Amount spent"
-                    aria-label="Amount spent"
-                    aria-describedby="spent in rupee"
-                />
-                <div class="input-group-append">
-                    <span class="input-group-text" id="spent in rupee">₹</span>
-                </div>
-            </div>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="spent at">@</span>
-                </div>
-                <input
-                    type="text"
-                    class="form-control"
-                    id="inputDesc"
-                    placeholder="spent On"
-                    aria-label="spent On"
-                    aria-describedby="spent at"
-                />
-                <div class="input-group-append">
-                    <button class="btn btn-outline-primary" type="button" id="btnAddExpense">Add</button>
-                </div>
-            </div>
-        </div>
-        <div>
-            <ul class="list-group" id="expenseTable">
 
-            </ul>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">Xpense</span>
+            <span class="navbar-brand mb-0 h1" id="headingTotal"></span>
+        </nav>
+        <div class="container-fluid bg-light" style="min-height: 100vh">
+            <div class="jumbotron mt-4">
+                <div class="input-group mb-3">
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="inputAmount"
+                        placeholder="Amount spent"
+                        aria-label="Amount spent"
+                        aria-describedby="spent in rupee"
+                    />
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="spent in rupee">₹</span>
+                    </div>
+
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="spent at">@</span>
+                    </div>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="inputDesc"
+                        placeholder="spent On"
+                        aria-label="spent On"
+                        aria-describedby="spent at"
+                    />
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="btnAddExpense">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <ul class="list-group" id="expenseTable">
+
+                </ul>
+            </div>
         </div>
     </div>
   </div>
