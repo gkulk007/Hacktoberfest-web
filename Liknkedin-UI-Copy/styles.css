@@ -1,0 +1,316 @@
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.element-left {
+    margin-left: 25%;
+    display: block;
+}
+
+.element-mid {
+    margin-left: 5%;
+    display: block;
+}
+
+.element-right {
+    display: block;
+    margin-left: 5%;
+}
+
+.header-main {
+    display: inline-flex;
+    background-color: #283e4a;
+    position: fixed;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.inl {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.fa {
+    font-size: x-large;
+}
+
+.beforelogo {
+    margin-left: 13%;
+}
+
+.head-home {
+    margin-left: 100px;
+}
+
+.search-bar {
+    padding: 6px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.head-text {
+    font-size: small;
+}
+
+.head-text:hover {
+    color: gray;
+    cursor: pointer;
+}
+
+.head-space {
+    height: 30px;
+    display: block;
+}
+
+.head-try {
+    width: 130px;
+}
+
+.head-work {
+    border-left: 1px white solid;
+    margin-left: 40px;
+    padding-left: 40px;
+}
+
+.try {
+    color: #beb695;
+    text-decoration: none;
+}
+
+.try:hover {
+    text-decoration: underline;
+}
+
+.profile {
+    background-color: white;
+    border: gray 1px solid;
+    width: 200px;
+}
+
+.profile-logo {
+    background-color: #0093bb;
+    padding-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    font-size: 60px;
+}
+
+.profile-name {
+    color: rgb(71, 69, 69);
+    font-size: small;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: gray 1px solid;
+}
+
+.profile-info {
+    color: rgb(71, 69, 69);
+    font-size: small;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+    border-bottom: gray 1px solid;
+}
+
+.profile-info:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile-save {
+    color: rgb(71, 69, 69);
+    font-size: medium;
+    text-align: left;
+    padding: 10px;
+}
+
+.profile-save:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.groups {
+    position: sticky;
+    top: 70px;
+    font-size: small;
+    margin-top: 10px;
+    background-color: white;
+    border: gray 1px solid;
+    width: 200px;
+}
+
+.groups-head {
+    margin-top: 5px;
+    padding: 2px;
+    color: #007da0;
+}
+
+.groups-head:hover {
+    text-decoration: underline;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.groups-events {
+    margin-top: 5px;
+    padding: 2px;
+}
+
+.groups-events:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.groups-followed {
+    margin-top: 5px;
+    padding: 2px;
+    padding-bottom: 5px;
+    color: #007da0;
+    border-bottom: gray 1px solid;
+}
+
+.groups-followed:hover {
+    text-decoration: underline;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.groups-discover {
+    padding: 10px;
+    text-align: center;
+    border-bottom: gray 1px solid;
+}
+
+.groups-discover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.post {
+    display: inline-block;
+    background-color: white;
+    border: gray 1px solid;
+    width: 480px;
+    height: 105px;
+}
+
+.post-write {
+    padding: 10px;
+    margin: 10px;
+    border-bottom: gray 1px solid;
+}
+
+.post-write:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.post-obj {
+    margin: 5px;
+    display: inline;
+    padding: 10px;
+    padding-top: 15px;
+    font-size: small;
+    text-align: center;
+}
+
+.post-obj:hover {
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: #0093bb;
+}
+
+
+.feeds {
+
+    width: 480px;
+}
+
+.feed-post {
+    margin-top: 20px;
+    background-color: white;
+    border: gray 1px solid;
+}
+
+.feed-img {
+    text-align: center;
+}
+
+.feed-name {
+    font-size: large;
+    padding: 10px;
+}
+
+.feed-text {
+    padding: 20px;
+    padding-left: 10px;
+    border-bottom: gray 1px solid;
+}
+
+.feed-obj {
+    font-size: small;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+}
+
+.feed-obj:hover {
+    color: #0093bb;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.news {
+    position: sticky;
+    top: 70px;
+    border: 1px gray solid;
+    width: 300px;
+    background-color: white;
+}
+
+.news-head {
+    padding: 20px;
+}
+
+.news-list {
+    padding: 5px;
+}
+
+.news-list:hover {
+    color: #007da0;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.info {
+    position: sticky;
+    top: 400px;
+    border-top: 1px gray solid;
+    width: 300px;
+    font-size: x-small;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.info-obj {
+    display: inline-block;
+    padding: 8px;
+}
+
+.info-obj:hover {
+    color: #007da0;
+    text-decoration: underline;
+    cursor: pointer;
+}
