@@ -1,0 +1,67 @@
+.b1{
+    margin-left: 550px;margin-top: 40px;
+}
+
+.b2{
+    margin-left:20px; margin-top:40px;
+}
+.reload{
+    margin-left: 100px;
+    
+}
+
+
+.b2{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background: white;
+    color: #30dd0d;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.b2:hover{
+    color: #130b0b;
+    background: #31eb03;
+    box-shadow: 0 0 10px #660cdb,0 0 40px #660cdb,0 0 80px #660cdb;
+    transition-delay: 0.1s;
+}
+
+.b1{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    background: white;
+    color: #da0b0b;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.b1:hover{
+    color: #130b0b;
+    background: #db0c0c;
+    box-shadow: 0 0 10px #16e603,0 0 40px #16e603,0 0 80px #16e603;
+    transition-delay: 0.1s;
+}
+
+.reload{
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+    color: #140202;
+    text-decoration: none;
+    font-size: 16px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+.reload:hover{
+    color: #130b0b;
+    background: #f3e305;
+    box-shadow: 0 0 10px #010500,0 0 40px #010500,0 0 80px #010500;
+    transition-delay: 0.1s;
+}
