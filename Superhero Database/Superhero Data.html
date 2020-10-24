@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Data Application</title>
+    <link rel="stylesheet" type="text/css" href="Superhero Data.css">
+</head>
+<body>
+    
+    <div class="modal" onclick="hideModal(event)">
+        <div class="modalchild">
+            <div class="form">
+                <form onsubmit="updateSuperhero(event)">
+                    <input type="text" required placeholder="Name" id="upname">
+                    <input type="number" required placeholder="Age" id="upage">
+                    <input type="text" required placeholder="Planet" id="upplanet">
+                    <input type="text" required placeholder="Height" id="upheight">
+                    <button type="submit">Update Superhero</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="data">
+        <h1>Superheroes</h1>
+        
+        <div class="form">
+            <form onsubmit="addSuperhero(event)">
+            <input type="text" required placeholder="Name" id="name">
+            <input type="number" required placeholder="Age" id="age">
+            <input type="text" required placeholder="Planet" id="planet">
+            <input type="text" required placeholder="Height" id="height">
+            <button type="submit">Add Superhero</button>
+            </form>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Start Searching here" id="searchName" onkeyup="searchByName()" />
+        </div>
+
+        <table border="10" class="table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Planet</th>
+                    <th>Height</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="tdata" id="tdata"></tbody>
+        </table>
+    </div>
+    
+    <script src="Superhero Data.js"></script>
+</body>
+</html>
