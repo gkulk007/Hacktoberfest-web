@@ -1,0 +1,45 @@
+body {
+  background-image: url('https://selfgrowth.info/photos/best-music-pictures/big-music-photos-download7473.jpg');
+  background-size: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.keys {
+  display: flex;
+
+  align-items: center;
+}
+.key {
+  border: 0.4rem solid gold;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.2s ease;
+  width: 8rem;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 0.5rem black;
+}
+.playing {
+  transform: scale(1.15);
+  color: #00f7ff;
+  border-color: #00f7ff;
+  box-shadow: 0 0 1rem #00f7ff;
+}
+kbd {
+  display: block;
+  font-size: 4rem;
+}
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
