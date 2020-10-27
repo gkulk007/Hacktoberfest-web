@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height: 18px
+}
+
+p {
+    margin: 0;
+}
+
+.navbar {
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    overflow: hidden;
+    background: white;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-link {
+    float: left
+}
+
+.navbar-link a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 7px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.dvgAS {
+    margin-left: 187px;
+    margin-right: 187px;
+}
+
+.navbar-brand {
+    font-family: 'Billabong', sans-serif;
+    font-size: 30px;
+}
+
+.navicon {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 4px 7px;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.navbar-right {
+    float: right;
+}
+
+/* MAIN CONTENT */
+.main {
+    margin-left: 187px;
+    margin-right: 187px;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content > .hdys {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 30px;
+}
+.content > .hdys > img {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+}
+.content > .infos {
+    flex-basis: 30px;
+    flex-grow: 2;
+}
+.infos > div > .username {
+    font-size: 25px;
+    font-weight: unset;
+}
+
+.infos > div > .hyYS {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+.infos > div > .hyYS > li {
+    list-style: none;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.jdhYs {
+    border-top: 1px solid #dbdbdb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.jdhYs > a {
+    color: grey;
+    text-decoration: none;
+    margin-right: 60px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.active {
+    color: black !important;
+    border-top: 1px solid black;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px 20px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container > .image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container > .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 86%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.container > .overlay > a > .textb {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    #khdf {
+        display: none;
+    }
+    .main {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hdys > img {
+        width: 100%
+    }
+    #Jjdod {
+        display: block;
+    }
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Billabong';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Billabong'), url('fonts/Billabong.woff') format('woff');
+}
+
